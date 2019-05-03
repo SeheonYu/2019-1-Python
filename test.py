@@ -10,5 +10,8 @@ for i in range(1,20):
     if txt.text == '사나':
         break
 
-print(soup.find("li",{'data-order':i}).find("span",{'class','ah_r'}).text + "위")
-print(txt.text)
+if txt.text != '사나':
+        print("No Sana")
+else:
+        print(soup.find("li",{'data-order':i}).find("span",{'class','ah_r'}).text + "위")
+        print(txt.text)
