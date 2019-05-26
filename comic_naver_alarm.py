@@ -2,7 +2,7 @@ import requests
 import time
 from bs4 import BeautifulSoup
 
-## DEF Func ##
+## Define Func ##
 
 def get_nextday_soup(wday: int):
     week = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']
